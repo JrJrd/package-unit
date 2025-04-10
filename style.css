@@ -5,7 +5,6 @@ body {
     background-color: #d1cdcd;
 }
 
-
 .unit-container {
     display: flex;
     justify-content: center;
@@ -13,10 +12,34 @@ body {
     background-color: #d1cdcd;
 }
 
-
 .unit {
     width: 500px;
     height: auto;
     border-radius: 10px;
     background-color: #d1cdcd;
+}
+
+.controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;  /* Space between elements */
+    margin-top: 20px;  /* Space between unit image and controls */
+}
+
+.temp-display {
+    font-size: 18px;
+}
+
+.button-container button {
+    background-color: transparent;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    padding: 10px;
+    transition: transform 0.2s ease;
+}
+
+.button-container button:hover {
+    transform: scale(1.2);  /* Slight zoom effect on hover */
 }

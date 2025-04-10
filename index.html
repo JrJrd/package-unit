@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css"> 
+    <title>Temperature Control</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
@@ -16,6 +16,16 @@
     </header>
     <div class="unit-container">
         <img class="unit" src="imgs/unit1.png" alt="unit">
+    </div>
+
+    <div class="controls">
+        <span class="temp-display">Space: </span>
+        <input type="number" id="temp-display" value="68" step="5" />
+        <div class="button-container">
+            <button id="increase-temp">↑</button>
+            <button id="decrease-temp">↓</button>
+        </div>
+        <span class="temp-display">Temp: <span id="room-temp">72</span>°F</span>
     </div>
 </body>
 </html>
