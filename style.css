@@ -2,44 +2,76 @@ body {
     margin: 0;
     padding: 0;
     font-family: sans-serif;
-    background-color: #d1cdcd;
+    background-color: #fafafa;
 }
 
 .unit-container {
     display: flex;
     justify-content: center;
     margin-top: 80px;
-    background-color: #d1cdcd;
+    background-color: #ffffff;
 }
 
 .unit {
     width: 500px;
     height: auto;
     border-radius: 10px;
-    background-color: #d1cdcd;
+    background-color: #ffffff;
 }
 
 .controls {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 20px;  /* Space between elements */
-    margin-top: 20px;  /* Space between unit image and controls */
+    margin-top: 20px;
 }
 
 .temp-display {
-    font-size: 18px;
+    font-size: 1.2rem;
+    margin-right: 10px;
 }
 
-.button-container button {
-    background-color: transparent;
-    border: none;
-    font-size: 24px;
-    cursor: pointer;
+#temp-display {
+    width: 70px;
+    text-align: center;
+}
+
+.button-container {
+    margin: 0 15px;
+}
+
+button {
     padding: 10px;
-    transition: transform 0.2s ease;
+    font-size: 16px;
+    background-color: #000000;
+    color: white;
+    border: none;
+    cursor: pointer;
 }
 
-.button-container button:hover {
-    transform: scale(1.2);  /* Slight zoom effect on hover */
+button:hover {
+    background-color: #a3a3a3;
+}
+
+.unit-operation {
+    width: 80%;
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: rgb(0, 0, 0);
+    color: rgb(4, 255, 67);
+    font-family: "Courier New", monospace;
+    font-size: 14px;
+    border-radius: 5px;
+    min-height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    overflow-y: auto; /* Allows scrolling when content overflows */
+    height: 300px; /* Fixed height for scroll */
+}
+
+.unit-operation #operation-log {
+    white-space: pre-line; /* Ensures new lines are respected */
+    margin-top: 10px;
 }
